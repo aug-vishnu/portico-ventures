@@ -30,6 +30,23 @@ p {
     color: #fff;
 }
 
+.form-group {
+    color: #fff;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+
+    .form-control {
+        color: transparent;
+        background-color: transparent;
+        opacity: 0.15;
+        border: 1.24941px solid #FFFFFF;
+        padding: 1.5em 1em;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+}
+
 
 header {
     .banner {
@@ -98,6 +115,7 @@ footer {
 
     .social {
         margin-right: 1.5em;
+        margin-left: 1.5em;
         border: 1px solid #12131738;
         border-radius: 100%;
         cursor: pointer;
@@ -120,7 +138,7 @@ footer {
 
     .footer-bottom {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         margin: 3em 0;
 
 
@@ -136,6 +154,12 @@ footer {
 
             color: #000000;
         }
+    }
+
+    .footer-bottom-index {
+        display: flex;
+        justify-content: center;
+        margin: 3em 0;
     }
 }
 
@@ -273,6 +297,124 @@ footer {
 /*   Portfolio Section Ends  */
 
 
+/*   Contact Section Starts  */
+.contact-section {
+    color: #fff;
+    padding: 0 15em;
+    margin-top: 7em;
+
+    #contact-content {
+        display: flex;
+        align-items: center;
+
+        .header {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: Montserrat;
+            font-size: 14px;
+            line-height: 17px;
+            margin: 0;
+        }
+
+        .content {
+            p {
+                width: 70%;
+                margin-bottom: 3em;
+            }
+        }
+
+        .info {
+            display: flex;
+            // align-items: flex-end;
+            margin-top: 2em;
+
+            img {
+                margin: 0 1em 0 0;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .contact-social {
+            .social {
+                zoom: 0.9;
+                margin-right: 1em;
+                border: 1px solid #ffffff38;
+                border-radius: 100%;
+                cursor: pointer;
+
+                svg,
+                img {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+
+            .social:hover {
+                background-color: rgba(179, 179, 179, 0.336);
+                cursor: pointer;
+
+                svg {
+
+                    zoom: 1.2;
+                }
+            }
+        }
+
+        .map img {
+            width: 30em;
+            height: 30em;
+            border-radius: 4px;
+        }
+
+        .contact-form {
+            width: 60%;
+
+            h2 {
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 0.7em;
+            }
+
+            button {
+                width: 100%;
+                padding: 1em 0;
+                border-radius: 8px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                margin: 2em 0em;
+            }
+        }
+    }
+
+    #contact-mails {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5em;
+
+        .header {
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+        p {
+            width: 15em;
+            margin: 0;
+        }
+    }
+
+
+}
+
+/*   Contact Section Ends  */
 
 #mainMenu li>a {
     font-family: 'Montserrat', sans-serif;
@@ -437,6 +579,76 @@ footer {
 
     /*   Portfolio Section Ends  */
 
+
+    /*   Contact Section Starts  */
+    .contact-section {
+        color: #fff;
+        padding: 0 1em;
+        margin: 4em 2em;
+
+        #contact-content {
+            flex-direction: column;
+            align-items: center;
+
+            .map img {
+                width: 30em;
+                height: 30em;
+                border-radius: 4px;
+            }
+
+            .contact-form {
+                width: 100%;
+
+                h2,
+                p {
+                    text-align: center;
+
+                }
+            }
+
+            .info {
+                p {
+                    margin: 0;
+                }
+            }
+
+            .content {
+                margin-top: 2em;
+                order: 2;
+
+                h2 {
+
+                    font-size: 2em;
+                }
+
+                p {
+                    width: 100%;
+                }
+            }
+        }
+
+        #contact-mails {
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 5em;
+
+            .header {
+                font-size: 1.2em;
+                font-weight: 600;
+                margin-top: 3em;
+            }
+
+            p {
+                width: 15em;
+                margin: 0;
+            }
+        }
+
+
+
+
+    }
+
     footer {
         padding: 0;
         zoom: 2;
@@ -490,8 +702,6 @@ footer {
             }
         }
     }
-
-
 
     #mainMenu li {
         margin-right: 30px;
