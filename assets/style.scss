@@ -482,8 +482,12 @@ footer {
 
 
 
+    #mainMenu li {
+        margin-right: 30px;
+    }
+
     #mainMenu {
-        ul {
+        .navbar-nav {
             display: flex;
         }
 
@@ -517,10 +521,11 @@ footer {
         padding-left: 0;
         padding-right: 0;
         text-align: center;
+        font-size: 2em;
     }
 
     .main-header .navbar-nav {
-        margin-top: 70px;
+        margin-top: 40px;
     }
 
     .main-header .navbar-nav li .nav-link {
