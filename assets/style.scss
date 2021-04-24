@@ -2,16 +2,32 @@
  * index.scss
  * - Add any styles you want here!
  */
-/* image 1 */
 body {
     // position: relative;
     background-image: linear-gradient(180deg, #161A25 0%, #0F0F0F 100%) !important;
     font-family: 'Montserrat', sans-serif;
+    animation: pulse 1.3s;
+
 }
 
 .hero {
     background: linear-gradient(rgba(0, 5, 23, 0.85) 0%, rgba(0, 0, 0, 0.85) 100%), url(images/bagr.png) !important;
     // background: url(images/bagr.png) !important;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+
+    100% {
+        opacity: 1;
+    }
 }
 
 // /* main-header start */
@@ -23,6 +39,7 @@ body {
 h1 {
     font-family: 'Playfair Display', serif;
     color: #fff;
+
 }
 
 p {
@@ -35,6 +52,7 @@ p {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
+    animation: pulse 3s;
 
     .form-control {
         color: transparent;
@@ -89,12 +107,14 @@ footer {
         zoom: 0.7;
 
         .btn-one {
-            padding: 1.6em 5em 1.6em 1em;
-            color: rgb(193, 193, 193);
+            font-family: 'Montserrat', sans-serif;
+            padding: 2em 5em 2em 1em;
+            color: rgb(0, 1, 43);
             background-color: #fff;
             // opacity: 0.2;
             border: 1px solid #12131738;
             border-radius: 8px;
+
         }
 
         .btn-two {
@@ -127,19 +147,17 @@ footer {
     }
 
     .social:hover {
-        background-color: rgba(179, 179, 179, 0.336);
+        background-color: rgba(179, 179, 179, 0.136);
         cursor: pointer;
+        transform: scale(1.2);
 
-        svg {
-
-            zoom: 1.3;
-        }
+        svg {}
     }
 
     .footer-bottom {
         display: flex;
         justify-content: space-between;
-        margin: 3em 0;
+        padding: 3em 0 1em 0;
 
 
         .footer-copyright {
@@ -336,7 +354,7 @@ footer {
             }
 
             p {
-                margin: 0 ;
+                margin: 0;
             }
         }
 
@@ -358,6 +376,7 @@ footer {
             .social:hover {
                 background-color: rgba(179, 179, 179, 0.336);
                 cursor: pointer;
+                zoom: 1.2;
 
                 svg {
 
@@ -366,11 +385,6 @@ footer {
             }
         }
 
-        .map img {
-            width: 30em;
-            height: 30em;
-            border-radius: 4px;
-        }
 
         .contact-form {
             width: 60%;
@@ -394,6 +408,15 @@ footer {
             }
         }
     }
+
+    .map img {
+        margin: 5em 0 2em 0;
+        display: flex;
+        width: 100%;
+        height: 40em;
+        border-radius: 8px;
+    }
+
 
     #contact-mails {
         display: flex;
@@ -425,6 +448,11 @@ footer {
     position: relative;
     z-index: 1;
     text-decoration: none;
+}
+
+#mainMenu li>a:hover {
+    font-size: 12px;
+    // zoom: 1.1;
 }
 
 .main-header.fixed-nav #mainMenu li>a {
@@ -644,8 +672,9 @@ footer {
             }
         }
 
-
-
+        .map img {
+            height: 20em;
+        }
 
     }
 
@@ -690,7 +719,8 @@ footer {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin: 3em 0;
+            bottom: 0;
+            // margin: 3em 0;
 
             .footer-social {
                 justify-content: center;
