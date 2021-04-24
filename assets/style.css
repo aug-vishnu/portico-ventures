@@ -374,7 +374,6 @@ footer .footer-bottom-index {
 .contact-section #contact-location #contact-mails {
   display: flex;
   order: 0;
-  flex-direction: column;
   justify-content: space-between;
 }
 .contact-section #contact-location #contact-mails .header {
@@ -388,7 +387,7 @@ footer .footer-bottom-index {
 .contact-section #contact-location #contact-mails .part-three,
 .contact-section #contact-location #contact-mails .part-one,
 .contact-section #contact-location #contact-mails .part-two {
-  margin: 3em 0 0 3em;
+  margin: 3em 0 0 0em;
 }
 .contact-section #contact-location .map img {
   margin: 5em 0 2em 0;
