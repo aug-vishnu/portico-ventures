@@ -7,15 +7,42 @@ $(window).scroll(function() {
     }
 });
 
-
-function validateform() {
-    var name = document.myform.name.value;
-    var email = document.myform.email.value;
-    var message = document.myform.message.value;
-
-    console.log("ashd");
-}
-
+// Fun for contact page
 $("form").submit(function() {
-    alert("Submitted");
+    // alert("Submitted");
+    $('#sucessModal').modal('show');
+    window.location.href = "/about.html";
+    console.log("sf");
+});
+
+
+// Function for scrolling fade effect 
+$(function() { // $(document).ready shorthand
+    $('.monster').fadeIn('slow');
+});
+
+$(document).ready(function() {
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll(function() {
+
+        /* Check the location of each desired element */
+        $('.vent').each(function(i) {
+
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if (bottom_of_window > bottom_of_object) {
+
+                $(this).animate({
+                    'opacity': '1'
+                }, 1500);
+
+            }
+
+        });
+
+    });
+
 });
