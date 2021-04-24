@@ -582,22 +582,36 @@ footer .footer-bottom-index {
   .contact-section #contact-content .content p {
     width: 100%;
   }
-  .contact-section #contact-mails {
+  .contact-section #contact-location {
+    flex-direction: column;
+  }
+  .contact-section #contact-location #contact-mails {
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 5em;
   }
-  .contact-section #contact-mails .header {
+  .contact-section #contact-location #contact-mails .container {
+    transform: scale(1.4);
+    margin: 0;
+  }
+  .contact-section #contact-location #contact-mails .header {
     font-size: 1.2em;
     font-weight: 600;
-    margin-top: 3em;
+    margin-top: 1em;
   }
-  .contact-section #contact-mails p {
+  .contact-section #contact-location #contact-mails p {
     width: 15em;
     margin: 0;
   }
-  .contact-section .map img {
-    height: 20em;
+  .contact-section #contact-location #contact-mails .part-three,
+.contact-section #contact-location #contact-mails .part-one,
+.contact-section #contact-location #contact-mails .part-two {
+    margin: 2em 0 0 3em;
+    transform: scale(1.1);
+  }
+  .contact-section #contact-location .map img {
+    margin: 4em 0 1em 0;
+    height: 25em;
+    width: 25em;
   }
 
   footer {

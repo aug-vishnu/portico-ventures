@@ -718,26 +718,45 @@ footer {
             }
         }
 
-        #contact-mails {
+        #contact-location {
             flex-direction: column;
-            justify-content: space-between;
-            margin-top: 5em;
 
-            .header {
-                font-size: 1.2em;
-                font-weight: 600;
-                margin-top: 3em;
+            #contact-mails {
+                flex-direction: column;
+                justify-content: space-between;
+
+                .container {
+                    transform: scale(1.4);
+                    margin: 0;
+                }
+
+                .header {
+                    font-size: 1.2em;
+                    font-weight: 600;
+                    margin-top: 1em;
+                }
+
+                p {
+                    width: 15em;
+                    margin: 0;
+                }
+
+                .part-three,
+                .part-one,
+                .part-two {
+                    margin: 2em 0 0 3em;
+                    transform: scale(1.1);
+                }
             }
 
-            p {
-                width: 15em;
-                margin: 0;
+
+            .map img {
+                margin: 4em 0 1em 0;
+                height: 25em;
+                width: 25em;
             }
         }
 
-        .map img {
-            height: 20em;
-        }
 
     }
 
