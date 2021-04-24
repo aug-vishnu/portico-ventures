@@ -396,6 +396,12 @@ footer .footer-bottom-index {
   height: 35em;
   border-radius: 8px;
 }
+.contact-section #contact-location #map {
+  margin: 5em 0 2em 0;
+  width: 65em;
+  height: 35em;
+  border-radius: 8px;
+}
 
 /*   Contact Section Ends  */
 #mainMenu li > a {
@@ -609,6 +615,11 @@ footer .footer-bottom-index {
     transform: scale(1.1);
   }
   .contact-section #contact-location .map img {
+    margin: 4em 0 1em 0;
+    height: 25em;
+    width: 25em;
+  }
+  .contact-section #contact-location #map {
     margin: 4em 0 1em 0;
     height: 25em;
     width: 25em;
