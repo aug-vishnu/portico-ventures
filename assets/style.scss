@@ -443,28 +443,41 @@ footer {
         }
     }
 
-    .map img {
-        margin: 5em 0 2em 0;
+    #contact-location {
         display: flex;
-        width: 100%;
-        height: 40em;
-        border-radius: 8px;
-    }
-
-
-    #contact-mails {
-        display: flex;
+        align-items: center;
         justify-content: space-between;
-        margin-top: 5em;
 
-        .header {
-            font-size: 1.2em;
-            font-weight: 600;
+        #contact-mails {
+            display: flex;
+            order: 0;
+            flex-direction: column;
+            justify-content: space-between;
+            // margin-top: 5em;
+
+            .header {
+                font-size: 1.2em;
+                font-weight: 600;
+            }
+
+            p {
+                width: 15em;
+                margin: 0;
+            }
+
+            .part-three,
+            .part-one,
+            .part-two {
+                margin: 3em 0 0 3em;
+            }
         }
 
-        p {
-            width: 15em;
-            margin: 0;
+        .map img {
+            margin: 5em 0 2em 0;
+            // display: flex;
+            width: 35em;
+            height: 35em;
+            border-radius: 8px;
         }
     }
 

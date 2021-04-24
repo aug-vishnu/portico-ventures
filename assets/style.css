@@ -366,25 +366,35 @@ footer .footer-bottom-index {
   font-weight: 600;
   margin: 2em 0em;
 }
-.contact-section .map img {
-  margin: 5em 0 2em 0;
+.contact-section #contact-location {
   display: flex;
-  width: 100%;
-  height: 40em;
-  border-radius: 8px;
-}
-.contact-section #contact-mails {
-  display: flex;
+  align-items: center;
   justify-content: space-between;
-  margin-top: 5em;
 }
-.contact-section #contact-mails .header {
+.contact-section #contact-location #contact-mails {
+  display: flex;
+  order: 0;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-section #contact-location #contact-mails .header {
   font-size: 1.2em;
   font-weight: 600;
 }
-.contact-section #contact-mails p {
+.contact-section #contact-location #contact-mails p {
   width: 15em;
   margin: 0;
+}
+.contact-section #contact-location #contact-mails .part-three,
+.contact-section #contact-location #contact-mails .part-one,
+.contact-section #contact-location #contact-mails .part-two {
+  margin: 3em 0 0 3em;
+}
+.contact-section #contact-location .map img {
+  margin: 5em 0 2em 0;
+  width: 35em;
+  height: 35em;
+  border-radius: 8px;
 }
 
 /*   Contact Section Ends  */
