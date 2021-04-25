@@ -906,7 +906,12 @@ footer {
     }
 
     .navbar-brand {
+
         padding-left: 1em;
+
+        img {
+            max-width: 40% !important;
+        }
     }
 
     .main-header .navbar {

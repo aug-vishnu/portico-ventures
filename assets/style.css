@@ -749,6 +749,9 @@ footer .part-three {
   .navbar-brand {
     padding-left: 1em;
   }
+  .navbar-brand img {
+    max-width: 40% !important;
+  }
 
   .main-header .navbar {
     float: none;
