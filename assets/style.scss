@@ -32,17 +32,29 @@ body {
     }
 }
 
+@keyframes ventGrow {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
 @keyframes pulse {
     0% {
+        transition: scaleY(0.95);
         opacity: 0;
     }
 
     50% {
+        // transform: scale(0.5);
         opacity: 0.5;
     }
 
-
     100% {
+        transition: scaleY(1);
         opacity: 1;
     }
 }
@@ -281,10 +293,12 @@ footer {
     color: #fff;
 
     .container {
-        padding: 4em 12em;
+        padding: 2em 12em;
     }
 
     #content-part {
+        margin-top: 6em;
+
         h1 {
             font-family: Montserrat;
             line-height: 50px;
@@ -317,6 +331,13 @@ footer {
             justify-content: center;
             align-items: center;
 
+        }
+
+        .vent:hover {
+            background-color: rgb(18, 18, 24);
+            border-radius: 10px;
+            cursor: pointer;
+            animation: ventGrow 0.8s;
         }
 
         .icon {
@@ -651,6 +672,10 @@ footer {
 
         .container {
             padding: 5em 2em 0em 2em;
+        }
+
+        #content-part {
+            margin-top: 1em;
         }
 
         #image-part {

@@ -30,26 +30,46 @@ body {
   padding: 1em 5em 1em 5em;
 }
 
-@-webkit-keyframes pulse {
-  0% {
-    opacity: 0;
+@-webkit-keyframes ventGrow {
+  from {
+    transform: scale(1);
   }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
+  to {
+    transform: scale(1.1);
   }
 }
 
-@keyframes pulse {
+@keyframes ventGrow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+@-webkit-keyframes pulse {
   0% {
+    transition: scaleY(0.95);
     opacity: 0;
   }
   50% {
     opacity: 0.5;
   }
   100% {
+    transition: scaleY(1);
+    opacity: 1;
+  }
+}
+@keyframes pulse {
+  0% {
+    transition: scaleY(0.95);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transition: scaleY(1);
     opacity: 1;
   }
 }
@@ -237,7 +257,10 @@ footer .footer-bottom-index {
   color: #fff;
 }
 .portfolio-section .container {
-  padding: 4em 12em;
+  padding: 2em 12em;
+}
+.portfolio-section #content-part {
+  margin-top: 6em;
 }
 .portfolio-section #content-part h1 {
   font-family: Montserrat;
@@ -263,6 +286,13 @@ footer .footer-bottom-index {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.portfolio-section #icons-part .vent:hover {
+  background-color: #121218;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-animation: ventGrow 0.8s;
+          animation: ventGrow 0.8s;
 }
 .portfolio-section #icons-part .icon {
   height: 100px;
@@ -533,6 +563,9 @@ footer .footer-bottom-index {
   }
   .portfolio-section .container {
     padding: 5em 2em 0em 2em;
+  }
+  .portfolio-section #content-part {
+    margin-top: 1em;
   }
   .portfolio-section #image-part {
     display: flex;
