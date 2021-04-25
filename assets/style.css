@@ -1,16 +1,18 @@
 .vent {
   opacity: 0;
+  margin-top: 4em;
 }
 
 .monster {
+  transform: scale(1);
   opacity: 1;
 }
 
 body {
   background-image: linear-gradient(180deg, #161A25 0%, #0F0F0F 100%) !important;
   font-family: "Montserrat", sans-serif;
-  -webkit-animation: pulse 1.3s;
-          animation: pulse 1.3s;
+  -webkit-animation: pulse 2.5s ease-in;
+          animation: pulse 2.5s ease-in;
 }
 
 .hero {
@@ -49,27 +51,29 @@ body {
 }
 @-webkit-keyframes pulse {
   0% {
-    transition: scaleY(0.95);
     opacity: 0;
+    margin-top: 2em;
   }
   50% {
+    margin-top: 1em;
     opacity: 0.5;
   }
   100% {
-    transition: scaleY(1);
+    margin-top: 0em;
     opacity: 1;
   }
 }
 @keyframes pulse {
   0% {
-    transition: scaleY(0.95);
     opacity: 0;
+    margin-top: 2em;
   }
   50% {
+    margin-top: 1em;
     opacity: 0.5;
   }
   100% {
-    transition: scaleY(1);
+    margin-top: 0em;
     opacity: 1;
   }
 }
@@ -93,8 +97,8 @@ p {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  -webkit-animation: pulse 3s;
-          animation: pulse 3s;
+  -webkit-animation: pulse 3s ease-in;
+          animation: pulse 3s ease-in;
 }
 .form-group .form-control {
   background-color: transparent;
@@ -234,7 +238,7 @@ footer .footer-bottom-index {
   color: #fff;
 }
 .about-section .container {
-  padding: 6em 12em;
+  padding: 6em 12em 3em 12em;
 }
 .about-section #content-part h1 {
   line-height: 50px;
@@ -243,7 +247,7 @@ footer .footer-bottom-index {
   font-size: 1em;
 }
 .about-section #content-part p {
-  margin-top: 2em;
+  padding-top: 1em;
   line-height: 30px;
 }
 .about-section #image-part {

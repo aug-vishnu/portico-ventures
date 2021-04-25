@@ -1,15 +1,17 @@
 .vent {
     opacity: 0;
+    margin-top: 4em;
 }
 
 .monster {
+    transform: scale(1);
     opacity: 1;
 }
 
 body {
     background-image: linear-gradient(180deg, #161A25 0%, #0F0F0F 100%) !important;
     font-family: 'Montserrat', sans-serif;
-    animation: pulse 1.3s;
+    animation: pulse 2.5s ease-in;
 }
 
 .hero {
@@ -44,17 +46,17 @@ body {
 
 @keyframes pulse {
     0% {
-        transition: scaleY(0.95);
         opacity: 0;
+        margin-top: 2em;
     }
 
     50% {
-        // transform: scale(0.5);
+        margin-top: 1em;
         opacity: 0.5;
     }
 
     100% {
-        transition: scaleY(1);
+        margin-top: 0em;
         opacity: 1;
     }
 }
@@ -81,7 +83,7 @@ p {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    animation: pulse 3s;
+    animation: pulse 3s ease-in;
 
     .form-control {
         background-color: transparent;
@@ -260,7 +262,7 @@ footer {
     color: #fff;
 
     .container {
-        padding: 6em 12em;
+        padding: 6em 12em 3em 12em;
     }
 
     #content-part {
@@ -273,7 +275,7 @@ footer {
         }
 
         p {
-            margin-top: 2em;
+            padding-top: 1em;
             line-height: 30px;
         }
     }

@@ -32,8 +32,9 @@ $(document).ready(function() {
             if (bottom_of_window > bottom_of_object) {
 
                 $(this).animate({
-                    'opacity': '1'
-                }, 1200);
+                    'opacity': '1',
+                    'marginTop': '0em',
+                }, 1200, );
 
             }
 
