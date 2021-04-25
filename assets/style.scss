@@ -339,7 +339,7 @@ footer {
             background-color: rgb(18, 18, 24);
             border-radius: 10px;
             cursor: pointer;
-            animation: ventGrow 0.8s;
+            animation: ventGrow 0.8s forwards;
         }
 
         .icon {
@@ -491,7 +491,7 @@ footer {
             .part-three,
             .part-one,
             .part-two {
-                margin: 3em 0 0 0em;
+                padding: 3em 0 0;
             }
         }
 
@@ -618,7 +618,8 @@ footer {
     padding: 0;
 
     img {
-        zoom: 4;
+        // zoom: 4;
+        width: 600px !important;
     }
 }
 
@@ -779,7 +780,7 @@ footer {
                 .part-three,
                 .part-one,
                 .part-two {
-                    margin: 2em 0 0 3em;
+                    margin: 2em 0 0 1em;
                     transform: scale(1.1);
                 }
             }

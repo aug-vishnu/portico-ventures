@@ -295,8 +295,8 @@ footer .footer-bottom-index {
   background-color: #121218;
   border-radius: 10px;
   cursor: pointer;
-  -webkit-animation: ventGrow 0.8s;
-          animation: ventGrow 0.8s;
+  -webkit-animation: ventGrow 0.8s forwards;
+          animation: ventGrow 0.8s forwards;
 }
 .portfolio-section #icons-part .icon {
   height: 100px;
@@ -421,7 +421,7 @@ footer .footer-bottom-index {
 .contact-section #contact-location #contact-mails .part-three,
 .contact-section #contact-location #contact-mails .part-one,
 .contact-section #contact-location #contact-mails .part-two {
-  margin: 3em 0 0 0em;
+  padding: 3em 0 0;
 }
 .contact-section #contact-location .map img {
   margin: 5em 0 2em 0;
@@ -522,7 +522,7 @@ footer .footer-bottom-index {
   padding: 0;
 }
 .navbar-brand img {
-  zoom: 4;
+  width: 600px !important;
 }
 
 .main-header .navbar-brand img {
@@ -647,7 +647,7 @@ footer .footer-bottom-index {
   .contact-section #contact-location #contact-mails .part-three,
 .contact-section #contact-location #contact-mails .part-one,
 .contact-section #contact-location #contact-mails .part-two {
-    margin: 2em 0 0 3em;
+    margin: 2em 0 0 1em;
     transform: scale(1.1);
   }
   .contact-section #contact-location .map img {
