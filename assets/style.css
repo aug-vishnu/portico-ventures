@@ -522,7 +522,7 @@ footer .footer-bottom-index {
   padding: 0;
 }
 .navbar-brand img {
-  width: 600px !important;
+  max-width: 20% !important;
 }
 
 .main-header .navbar-brand img {
