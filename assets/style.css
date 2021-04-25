@@ -747,10 +747,12 @@ footer .part-three {
   }
 
   .navbar-brand {
+    display: flex !important;
     padding-left: 1em;
   }
   .navbar-brand img {
     max-width: 40% !important;
+    left: 0;
   }
 
   .main-header .navbar {
